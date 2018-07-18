@@ -262,6 +262,7 @@ PRODUCT_PACKAGES += \
     FrameworksResMumba \
     TurboPowerOverlay \
     LineageSettingsMumba \
+    LineageDialerOverlayMumba \
     SettingsResMumba \
     TelephonyResMumba
 
