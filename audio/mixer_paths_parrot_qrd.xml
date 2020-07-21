@@ -177,20 +177,20 @@
     <ctl name="ADC4 ChMap" value="ZERO" />
 
     <!-- Volume controls -->
-    <ctl name="RX_RX0 Digital Volume" value="84" />
-    <ctl name="RX_RX1 Digital Volume" value="84" />
-    <ctl name="RX_RX2 Digital Volume" value="84" />
+    <ctl name="RX_RX0 Digital Volume" value="86" />
+    <ctl name="RX_RX1 Digital Volume" value="86" />
+    <ctl name="RX_RX2 Digital Volume" value="86" />
     <ctl name="HPHL Volume" value="20" />
     <ctl name="HPHR Volume" value="20" />
 
-    <ctl name="TX_DEC0 Volume" value="84" />
-    <ctl name="TX_DEC1 Volume" value="84" />
-    <ctl name="TX_DEC2 Volume" value="84" />
-    <ctl name="TX_DEC3 Volume" value="84" />
-    <ctl name="TX_DEC4 Volume" value="84" />
-    <ctl name="TX_DEC5 Volume" value="84" />
-    <ctl name="TX_DEC6 Volume" value="84" />
-    <ctl name="TX_DEC7 Volume" value="84" />
+    <ctl name="TX_DEC0 Volume" value="86" />
+    <ctl name="TX_DEC1 Volume" value="86" />
+    <ctl name="TX_DEC2 Volume" value="86" />
+    <ctl name="TX_DEC3 Volume" value="86" />
+    <ctl name="TX_DEC4 Volume" value="86" />
+    <ctl name="TX_DEC5 Volume" value="86" />
+    <ctl name="TX_DEC6 Volume" value="86" />
+    <ctl name="TX_DEC7 Volume" value="86" />
 
     <ctl name="ADC1 Volume" value="8" />
     <ctl name="ADC2 Volume" value="8" />
@@ -1884,8 +1884,8 @@
         <ctl name="EAR_RDAC Switch" value="1" />
         <ctl name="RDAC3_MUX" value="RX1" />
         <ctl name="RX_EAR Mode" value="ON" />
-        <ctl name="RX_RX0 Digital Volume" value="84" />
-        <ctl name="RX_RX2 Digital Volume" value="84" />
+        <ctl name="RX_RX0 Digital Volume" value="86" />
+        <ctl name="RX_RX2 Digital Volume" value="86" />
         <ctl name="SPK1 Ext AMP Mode" value="0" />
         <ctl name="SPK2 Ext AMP Mode" value="0" />
         <ctl name="SPK1 Ext AMP Switch" value="1" />
@@ -1904,8 +1904,8 @@
         <ctl name="EAR_RDAC Switch" value="1" />
         <ctl name="RDAC3_MUX" value="RX1" />
         <ctl name="RX_EAR Mode" value="ON" />
-        <ctl name="RX_RX0 Digital Volume" value="84" />
-        <ctl name="RX_RX2 Digital Volume" value="84" />
+        <ctl name="RX_RX0 Digital Volume" value="86" />
+        <ctl name="RX_RX2 Digital Volume" value="86" />
         <ctl name="SPK1 Ext AMP Mode" value="1" />
         <ctl name="SPK2 Ext AMP Mode" value="1" />
         <ctl name="SPK1 Ext AMP Switch" value="1" />
@@ -1924,8 +1924,8 @@
         <ctl name="EAR_RDAC Switch" value="1" />
         <ctl name="RDAC3_MUX" value="RX1" />
         <ctl name="RX_EAR Mode" value="ON" />
-        <ctl name="RX_RX0 Digital Volume" value="84" />
-        <ctl name="RX_RX2 Digital Volume" value="84" />
+        <ctl name="RX_RX0 Digital Volume" value="86" />
+        <ctl name="RX_RX2 Digital Volume" value="86" />
         <ctl name="SPK1 Ext AMP Mode" value="2" />
         <ctl name="SPK2 Ext AMP Mode" value="2" />
         <ctl name="SPK1 Ext AMP Switch" value="1" />
@@ -1948,8 +1948,8 @@
         <ctl name="EAR_RDAC Switch" value="1" />
         <ctl name="RDAC3_MUX" value="RX1" />
         <ctl name="RX_EAR Mode" value="ON" />
-        <ctl name="RX_RX0 Digital Volume" value="84" />
-        <ctl name="RX_RX2 Digital Volume" value="84" />
+        <ctl name="RX_RX0 Digital Volume" value="86" />
+        <ctl name="RX_RX2 Digital Volume" value="86" />
         <ctl name="SPK1 Ext AMP Mode" value="0" />
         <ctl name="SPK2 Ext AMP Mode" value="0" />
         <ctl name="SPK1 Ext AMP Switch" value="1" />
@@ -1968,8 +1968,8 @@
         <ctl name="EAR_RDAC Switch" value="1" />
         <ctl name="RDAC3_MUX" value="RX1" />
         <ctl name="RX_EAR Mode" value="ON" />
-        <ctl name="RX_RX0 Digital Volume" value="84" />
-        <ctl name="RX_RX2 Digital Volume" value="84" />
+        <ctl name="RX_RX0 Digital Volume" value="86" />
+        <ctl name="RX_RX2 Digital Volume" value="86" />
         <ctl name="SPK1 Ext AMP Mode" value="0" />
         <ctl name="SPK2 Ext AMP Mode" value="0" />
         <ctl name="SPK1 Ext AMP Switch" value="0" />
@@ -2181,7 +2181,7 @@
     </path>
 
     <path name="headset-mic">
-        <ctl name="TX_DEC0 Volume" value="84" />
+        <ctl name="TX_DEC0 Volume" value="86" />
         <path name="amic2" />
         <ctl name="ADC2 Volume" value="12" />
     </path>
@@ -2599,7 +2599,7 @@
     <path name="voice-tty-full-headset-mic">
         <path name="amic2" />
         <ctl name="ADC2 Volume" value="0" />
-        <ctl name="TX_DEC5 Volume" value="84" />
+        <ctl name="TX_DEC5 Volume" value="86" />
     </path>
 
     <path name="voice-tty-hco-headset-mic">
