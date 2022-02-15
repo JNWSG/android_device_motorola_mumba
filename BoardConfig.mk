@@ -175,6 +175,9 @@ ODM_MANIFEST_DNE_FILES := $(DEVICE_PATH)/sku/manifest_dne.xml
 ODM_MANIFEST_N_FILES := $(DEVICE_PATH)/sku/manifest_n.xml
 ODM_MANIFEST_NE_FILES := $(DEVICE_PATH)/sku/manifest_ne.xml
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # SEPolicy
 include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
