@@ -1,0 +1,1 @@
+allow vendor_nicmd init_service_status_private_prop:file read;
