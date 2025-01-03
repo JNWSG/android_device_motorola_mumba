@@ -3,6 +3,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Kernel
+PRODUCT_ENABLE_UFFD_GC := true
+
 # Shipping API
 BOARD_SHIPPING_API_LEVEL := 202404
 PRODUCT_SHIPPING_API_LEVEL := 36
