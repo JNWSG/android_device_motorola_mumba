@@ -157,6 +157,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/bin/hw/android.hardware.biometrics.fingerprint-service.fpc': blob_fixup()
         .remove_needed('android.hardware.biometrics.fingerprint-V4-ndk.so')
         .remove_needed('android.hardware.biometrics.common-V4-ndk.so'),
+    ('vendor/lib64/libqcrilNr.so', 'vendor/lib64/libril-db.so'): blob_fixup()
+        .binary_regex_replace(rb'persist\.vendor\.radio\.poweron_opt', b'persist.vendor.radio.poweron_ign'),
 } # fmt: skip
 
 extract_fns: extract_fns_user_type = {
