@@ -30,7 +30,6 @@ prebuilt_etc {
     soc_specific: true,
 }
 
-
 prebuilt_etc {
     name: "ueventd-odm.rc",
     filename: "ueventd.rc",
