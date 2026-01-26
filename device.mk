@@ -53,7 +53,8 @@ PRODUCT_PACKAGES += \
     libsndcardparser \
     libsoundtriggerhal.qti \
     libvolumelistener \
-    qtiaudiohalvendorextn
+    qtiaudiohalvendorextn \
+    qti-audio-types-aidl-V1-ndk.vendor
 
 PRODUCT_PACKAGES += \
     libalsautilsv2.vendor \
