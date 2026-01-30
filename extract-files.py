@@ -144,17 +144,6 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/bin/hw/android.hardware.biometrics.fingerprint-service.fpc': blob_fixup()
         .remove_needed('android.hardware.biometrics.fingerprint-V4-ndk.so')
         .remove_needed('android.hardware.biometrics.common-V4-ndk.so'),
-    (
-        'vendor/lib64/libcodec2_soft_ac4dec.so',
-        'vendor/lib64/libcodec2_soft_ddpdec.so',
-        'vendor/lib64/libdlbdsservice.so',
-        'vendor/lib64/libdlbpreg.so',
-        'vendor/lib64/soundfx/libdlbvolaidl.so',
-        'vendor/lib64/soundfx/libswdapaidl.so',
-        'vendor/lib64/soundfx/libswgamedapaidl.so',
-        'vendor/lib64/soundfx/libswspatializeraidl.so',
-    ): blob_fixup()
-        .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
 } # fmt: skip
 
 extract_fns: extract_fns_user_type = {
