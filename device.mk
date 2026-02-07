@@ -288,6 +288,7 @@ PRODUCT_COPY_FILES += \
 
 # Mountpoints/Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_BUILD_PVMFW_IMAGE := true
 
 PRODUCT_PACKAGES += \
     vendor_bt_firmware_mountpoint \
