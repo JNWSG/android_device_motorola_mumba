@@ -5,6 +5,9 @@
 
 DEVICE_PATH := device/motorola/mumba
 
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 # A/B
 AB_OTA_PARTITIONS += \
     boot \
