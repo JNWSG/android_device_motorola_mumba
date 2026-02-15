@@ -1,0 +1,10 @@
+[
+    {
+        "repository": "device/motorola/common",
+        "target_path": "device/motorola/common"
+    },
+    {
+        "repository": "hardware/motorola",
+        "target_path": "hardware/motorola"
+    }
+]

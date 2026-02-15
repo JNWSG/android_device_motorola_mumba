@@ -1,0 +1,11 @@
+# Binaries
+*.pyc
+__pycache__/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.img
+*.zip
