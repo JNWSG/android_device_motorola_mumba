@@ -8,4 +8,5 @@ Thumbs.db
 
 # Build artifacts
 *.img
+!dtbo.img
 *.zip

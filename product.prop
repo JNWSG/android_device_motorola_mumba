@@ -1,10 +1,7 @@
-# Audio
-ro.config.notification_sound=OnTheHunt.ogg
-ro.config.alarm_alert=Alarm_Classic.ogg
 
 # Device
 ro.product.board=mumba
-ro.product.first_api_level=36
+# ro.product.first_api_level=36
 
 # LMKD
 ro.lmk.kill_heaviest_task=true

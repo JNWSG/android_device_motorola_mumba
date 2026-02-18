@@ -1,0 +1,5 @@
+vintf_fragment {
+    name: "manifest_mumba",
+    src: "manifest.xml",
+    vendor: true,
+}

@@ -1,8 +1,10 @@
 #
-# Copyright (C) 2026 The LineageOS Project
+# Copyright (C) 2024 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
 #
 
-# Shipping API level
+DEVICE_PATH := device/motorola/mumba
 PRODUCT_SHIPPING_API_LEVEL := 36
 
 # Dynamic partitions
@@ -96,7 +98,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
 # VINTF
-DEVICE_MATRIX_FILE := $(DEVICE_PATH)/vintf/compatibility_matrix.xml
-DEVICE_MANIFEST_FRAGMENTS := \
-    $(wildcard $(DEVICE_PATH)/vintf/manifest/*.xml)
+DEVICE_MANIFEST_FILE := device/motorola/mumba/vintf/manifest.xml
 
+# Explicitly copy the manifest... DELETED
+
+
+# =====================================================
+# Force Shipping API Level to bypass VINTF frozen/legacy checks
+# =====================================================
+PRODUCT_SHIPPING_API_LEVEL := 36

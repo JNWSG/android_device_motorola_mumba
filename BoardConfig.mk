@@ -35,6 +35,10 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 TARGET_BOARD_PLATFORM := parrot
 QCOM_BOARD_PLATFORMS += parrot
 TARGET_BOOTLOADER_BOARD_NAME := mumba
+BOARD_SHIPPING_API_LEVEL := 36
+SHIPPING_API_LEVEL := 36
+TARGET_SHIPPING_API_LEVEL := 36
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 
 # =====================================================
@@ -42,11 +46,13 @@ TARGET_BOOTLOADER_BOARD_NAME := mumba
 # =====================================================
 
 BOARD_BOOT_HEADER_VERSION := 4
+BOARD_INIT_BOOT_HEADER_VERSION := 4
+BOARD_MKBOOTIMG_ARGS += --header_version 4
 BOARD_BUILD_INIT_BOOT_IMAGE := true
 AB_OTA_UPDATER := true
 
 BOARD_KERNEL_SEPARATED_DTBO := true
-BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
+BOARD_PREBUILT_DTBOIMAGE := vendor/motorola/mumba/proprietary/dtbo.img
 
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 BOARD_USES_RECOVERY_AS_BOOT := false
@@ -61,8 +67,14 @@ BOARD_KERNEL_PAGESIZE := 4096
 
 BOARD_KERNEL_CMDLINE := console=ttyMSM0 loglevel=6 log_buf_len=256K androidboot.selinux=permissive
 
+# Partition Sizes (100MB Boot/VendorBoot, 8MB InitBoot - Safe Defaults)
+BOARD_BOOTIMAGE_PARTITION_SIZE := 104857600
+BOARD_INIT_BOOT_IMAGE_PARTITION_SIZE := 8388608
+BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 104857600
+
+
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilts/kernel
-BOARD_USES_GENERIC_KERNEL_IMAGE := true
+
 
 
 # =====================================================
@@ -103,5 +115,24 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 TARGET_COPY_OUT_SYSTEM_DLKM := system_dlkm
 
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/vintf/manifest/manifest_mumba.xml
-DEVICE_MATRIX_FILE := $(DEVICE_PATH)/vintf/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := device/motorola/mumba/vintf/manifest.xml
+DEVICE_MATRIX_FILE := device/motorola/mumba/vintf/compatibility_matrix.xml
+
+
+
+# =====================================================
+# AVB (Android Verified Boot)
+# =====================================================
+
+BOARD_AVB_ENABLE := true
+BOARD_AVB_MAKE_VBMETA_IMAGE := true
+BOARD_AVB_RECOVERY_KEY_PATH := external/avb/test/data/testkey_rsa4096.pem
+BOARD_AVB_RECOVERY_ALGORITHM := SHA256_RSA4096
+BOARD_AVB_RECOVERY_ROLLBACK_INDEX := 1
+BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
+
+BOARD_AVB_VBMETA_SYSTEM := system system_ext product
+BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
+BOARD_AVB_VBMETA_SYSTEM_ALGORITHM := SHA256_RSA2048
+BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := 1
+BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 2

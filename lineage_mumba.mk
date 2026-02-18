@@ -18,7 +18,8 @@ PRODUCT_BRAND := motorola
 PRODUCT_MODEL := Moto G57
 PRODUCT_MANUFACTURER := motorola
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="mumba_gp-user 16 W1WAA36.48-12-28 ec5cc-14fbc release-keys MW-274"
 
 BUILD_FINGERPRINT := motorola/mumba_gp/mumba:16/W1WAA36.48-12-28/ec5cc-14fbc:user/release-keys
+
+# Force Shipping API Level to 36 (Android 16) to ensure VINTF checks run against modern matrix
+PRODUCT_SHIPPING_API_LEVEL := 36
