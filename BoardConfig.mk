@@ -55,6 +55,8 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
 
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
+BOARD_INCLUDE_RECOVERY_RAMDISK_IN_VENDOR_BOOT := true
+BOARD_VENDOR_RAMDISK_USE_LZ4 := true
 BOARD_USES_RECOVERY_AS_BOOT := false
 
 
@@ -63,8 +65,10 @@ BOARD_USES_RECOVERY_AS_BOOT := false
 # Vendor Ramdisk (Kernel Modules)
 # =====================================================
 
-BOARD_VENDOR_RAMDISK_FRAGMENTS += vendor_module_ramdisk
-BOARD_VENDOR_RAMDISK_FRAGMENT.vendor_module_ramdisk.KERNEL_MODULE_DIRS := vendor_dlkm/lib/modules
+# Vendor Ramdisk
+# =====================================================
+# DELETED: BOARD_VENDOR_RAMDISK_FRAGMENTS code
+
 
 # =====================================================
 # Kernel (Prebuilt Bring-up Mode)

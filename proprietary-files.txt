@@ -1899,3 +1899,6 @@ vendor_dlkm/lib/modules/modules.load
 vendor_dlkm/lib/modules/modules.dep
 vendor_dlkm/lib/modules/modules.softdep
 vendor_dlkm/lib/modules/modules.alias
+
+vendor/etc/group
+vendor/etc/passwd

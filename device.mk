@@ -29,12 +29,12 @@ PRODUCT_MANUFACTURER := motorola
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 # Fstab
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom \
-    $(LOCAL_PATH)/rootdir/etc/init.target.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.target.rc \
-    $(LOCAL_PATH)/rootdir/etc/init.mmi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mmi.rc \
-    $(LOCAL_PATH)/rootdir/etc/init.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qcom.rc \
-    $(LOCAL_PATH)/rootdir/etc/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc
+# Vendor ramdisk files (Android 13+ required)
+# Vendor ramdisk files (Android 13+ required)
+# NOTE: Using TARGET_COPY_OUT_VENDOR to avoid Soong neverallow error for root install
+# Vendor ramdisk files (Handled by rootdir/Android.mk)
+PRODUCT_PACKAGES += \
+    mumba_vendor_ramdisk_init \
 
 # A/B OTA partitions
 AB_OTA_PARTITIONS += \
