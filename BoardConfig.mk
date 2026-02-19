@@ -52,7 +52,7 @@ BOARD_BUILD_INIT_BOOT_IMAGE := true
 AB_OTA_UPDATER := true
 
 BOARD_KERNEL_SEPARATED_DTBO := true
-BOARD_PREBUILT_DTBOIMAGE := vendor/motorola/mumba/proprietary/dtbo.img
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
 
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 BOARD_USES_RECOVERY_AS_BOOT := false
@@ -63,15 +63,14 @@ BOARD_USES_RECOVERY_AS_BOOT := false
 # Vendor Ramdisk (Kernel Modules)
 # =====================================================
 
-BOARD_VENDOR_RAMDISK_FRAGMENTS := vendor_ramdisk
-BOARD_VENDOR_RAMDISK_FRAGMENT.vendor_ramdisk.KERNEL_MODULE_DIRS := vendor_dlkm/lib/modules
+BOARD_VENDOR_RAMDISK_FRAGMENTS += vendor_module_ramdisk
+BOARD_VENDOR_RAMDISK_FRAGMENT.vendor_module_ramdisk.KERNEL_MODULE_DIRS := vendor_dlkm/lib/modules
 
 # =====================================================
 # Kernel (Prebuilt Bring-up Mode)
 # =====================================================
 
-BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_PAGESIZE := 4096
+
 
 BOARD_KERNEL_CMDLINE := console=ttyMSM0 loglevel=6 log_buf_len=256K androidboot.selinux=permissive
 

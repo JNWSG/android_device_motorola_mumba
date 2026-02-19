@@ -1,7 +1,7 @@
 soong_namespace {
     imports: [
-        "hardware/motorola",
-        "hardware/qcom-caf/bootctrl",
-        "hardware/qcom-caf/common/libqti-perfd-client",
+//        "hardware/motorola",
+//        "hardware/qcom-caf/bootctrl",
+//        "hardware/qcom-caf/common/libqti-perfd-client",
     ],
 }
