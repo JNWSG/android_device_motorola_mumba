@@ -26,7 +26,6 @@
         <version>2</version>
         <fqname>IMdpfExt/default</fqname>
     </hal>
-
     <hal format="aidl">
         <name>vendor.nxp.nxpnfc_aidl</name>
         <fqname>INxpNfc/default</fqname>
@@ -41,15 +40,8 @@
     <hal format="hidl" override="true">
         <name>vendor.qti.memory.pasrmanager</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
     </hal>
-    <hal format="hidl">
-        <name>android.hidl.allocator</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IAllocator</name>
-            <instance>ashmem</instance>
-        </interface>
-    </hal>
+    <sepolicy>
+        <version>202404</version>
+    </sepolicy>
 </manifest>

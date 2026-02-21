@@ -9,10 +9,9 @@ PRODUCT_SHIPPING_API_LEVEL := 36
 
 # Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
-PRODUCT_TARGET_VNDK_VERSION := current
 
 # Inherit base products
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
@@ -28,18 +27,13 @@ PRODUCT_MANUFACTURER := motorola
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
-# Fstab
 # Vendor ramdisk files (Android 13+ required)
-# Vendor ramdisk files (Android 13+ required)
-# NOTE: Using TARGET_COPY_OUT_VENDOR to avoid Soong neverallow error for root install
-# Vendor ramdisk files (Handled by rootdir/Android.mk)
 PRODUCT_PACKAGES += \
     mumba_vendor_ramdisk_fstab.qcom \
     mumba_vendor_ramdisk_init.mmi.rc \
     mumba_vendor_ramdisk_init.qcom.rc \
     mumba_vendor_ramdisk_init.target.rc \
-    mumba_vendor_ramdisk_ueventd.rc \
-    android.hidl.allocator@1.0-service \
+    mumba_vendor_ramdisk_ueventd.rc
 
 # A/B OTA partitions
 AB_OTA_PARTITIONS += \
@@ -49,7 +43,6 @@ AB_OTA_PARTITIONS += \
     recovery \
     vbmeta \
     vbmeta_system \
-    vbmeta_vendor \
     vendor_boot \
     system \
     system_ext \
@@ -63,7 +56,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/resource-overlay/device
 
 # Properties
-
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/system.prop:$(TARGET_COPY_OUT_SYSTEM)/system.prop \
     $(DEVICE_PATH)/product.prop:$(TARGET_COPY_OUT_PRODUCT)/product.prop \
@@ -78,7 +70,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/mixer_paths_parrot_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_parrot_qrd.xml \
     $(LOCAL_PATH)/configs/audio/resourcemanager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/resourcemanager.xml \
     $(LOCAL_PATH)/configs/audio/media_codecs_parrot_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_parrot_v0.xml
-    
+
 # Permissions
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/permissions/,$(TARGET_COPY_OUT_VENDOR)/etc/permissions)
@@ -105,11 +97,3 @@ PRODUCT_COPY_FILES += \
 # Wifi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
-
-# VINTF
-
-
-# Explicitly copy the manifest... DELETED
-
-
-
