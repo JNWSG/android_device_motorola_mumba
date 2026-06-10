@@ -64,8 +64,34 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.qcom.zram \
-    fstab.qcom.vendor_ramdisk
-    init.qcom.recovery.rc
+    fstab.qcom.vendor_ramdisk \
+    init.mmi.chipset.rc \
+    init.qcom.post_boot.sh \
+    init.target.rc \
+    init.mmi.overlay.rc \
+    init.qcom.rc \
+    init.vendor.st21nfc.rc \
+    init.mmi.rc \
+    init.qcom.recovery.rc \
+    init.class_main.sh \
+    init.mmi.touch.sh \
+    init.qcom.sh \
+    init.kernel.post_boot-parrot.sh \
+    init.oem.fingerprint2.sh \
+    init.qti.kernel.sh \
+    init.kernel.post_boot-ravelin.sh \
+    init.oem.hw.sh \
+    init.qti.keymaster.sh \
+    init.kernel.post_boot.sh \
+    init.qcom.class_core.sh \
+    init.qti.qcv.sh \
+    init.mmi.boot.sh \
+    init.qcom.early_boot.sh \
+    init.qti.write.sh \
+    vendor_modprobe.sh \
+    system_dlkm_modprobe.sh \
+    ueventd-odm.rc \
+    ueventd.qcom.rc
 
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := true
