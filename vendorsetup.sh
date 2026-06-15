@@ -20,7 +20,7 @@ clone_if_missing() {
     fi
 }
 # Git clones
-clone_if_missing "https://github.com/JNWSG/android_device_motorola_mumba.git" "lineage-23.2" "device/motorola/mumba"
+clone_if_missing "https://github.com/JNWSG/android_device_motorola_mumba.git" "pixel" "device/motorola/mumba"
 clone_if_missing "https://github.com/JNWSG/android_device_motorola_mumba-kernel.git" "" "device/motorola/mumba-kernel"
 clone_if_missing "https://github.com/JNWSG/android_vendor_motorola_mumba.git" "lineage-23.2" "vendor/motorola/mumba"
 # Additional repos
