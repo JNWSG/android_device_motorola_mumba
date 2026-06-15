@@ -28,3 +28,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=mumba_g \
     SystemDevice=mumba \
     SystemName=mumba
+
+# MistOS Stuff
+MIST_BUILD_TYPE := UNOFFICIAL
+MISTOS_MAINTAINER := INACTIV JINWOO
+WITH_GMS := true
+TARGET_USES_MINI_GAPPS := true
+TARGET_ENABLE_BLUR := true

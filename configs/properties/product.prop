@@ -71,3 +71,13 @@ remote_provisioning.hostname=remoteprovisioning.googleapis.com
 
 # Radio
 ro.vendor.radio.imei.sv=24
+
+# MistOS
+ro.mist.display=1080 x 2400, 120 hz
+ro.mist.battery=7000mah
+ro.mist.soc=Qualcomm Snapdragon 6s Gen 4 (4nm)
+ro.mist.camera=50MP + 8MP
+ro.mist.front=8MP
+ro.mist.platform=SM6435-AA
+ro.mist.screen=6.72' IPS LCD
+ro.mist.device.name=Motorola G57 Power 5G
