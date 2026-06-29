@@ -43,7 +43,6 @@ libs_add_vendor_suffix = (
     'vendor.qti.hardware.fm-V1-ndk',
     'vendor.qti.hardware.fm@1.0',
     'vendor.qti.hardware.dpmaidlservice-V1-ndk',
-    'vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk',
     'vendor.qti.qccsyshal_aidl-V1-ndk',
     'vendor.qti.qccvndhal_aidl-V1-ndk',
 )
@@ -76,14 +75,6 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so',
     ): blob_fixup()
         .replace_needed('android.hardware.graphics.allocator-V1-ndk.so', 'android.hardware.graphics.allocator-V2-ndk.so'),
-        'system_ext/lib64/libwfdmmsrc_system.so': blob_fixup()
-        .add_needed('libgui_shim.so'),
-    'system_ext/lib64/libwfdnative.so': blob_fixup()
-        .add_needed('libbinder_shim.so')
-        .add_needed('libinput_shim.so')
-        .remove_needed('android.hidl.base@1.0.so'),
-    'vendor/lib64/libwfdmmsrc_proprietary.so': blob_fixup()
-        .replace_needed('android.media.audio.common.types-V2-ndk.so', 'android.media.audio.common.types-V3-ndk.so'),
     'vendor/lib64/libqcodec2_core.so': blob_fixup()
         .add_needed('libcodec2_shim.so')
         .replace_needed('android.hardware.graphics.common-V5-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),

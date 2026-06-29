@@ -392,6 +392,3 @@ sys.vendor.shutdown.waittime=500
 
 # Volume
 ro.config.vc_call_vol_steps=8
-
-# Wi-Fi Display
-persist.sys.wfd.virtual=0
