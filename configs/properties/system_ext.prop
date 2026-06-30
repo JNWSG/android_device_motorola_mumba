@@ -29,11 +29,6 @@ ro.bluetooth.leaudio_offload.supported=true
 # Charger
 ro.charger.enable_suspend=1
 
-# Camera
-persist.vendor.camera.expose.aux=1
-vendor.camera.aux.packagelist=com.motorola.camera3,com.motorola.camera5,com.motorola.motocit
-vendor.camera.aux.packagelist2=com.motorola.ccc,com.android.settings,com.motorola.motointelligence
-
 # Display
 sys.brightness.disable_gamma_conversion=true
 
@@ -67,7 +62,3 @@ persist.debug.wfd.enable=1
 
 # NFC
 persist.nfc_cfg.config_file_name=libnfc-nci-st.conf
-
-# ScrollOptimizer
-persist.sys.perf.scroll_opt = true
-persist.sys.perf.scroll_opt.heavy_app = 1
