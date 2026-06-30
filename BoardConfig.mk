@@ -156,11 +156,11 @@ BOOT_SECURITY_PATCH := 2026-03-01
 VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
 # Properties
-TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/properties/product.prop
-TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/properties/system_ext.prop
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/properties/system.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
+TARGET_ODM_PROP += $(DEVICE_PATH)/configs/properties/odm.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/properties/product.prop
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/configs/properties/system_ext.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/properties/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop
 
 # Recovery
 BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
@@ -171,12 +171,12 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # Manifest
 ODM_MANIFEST_SKUS += b d dn dne n ne
-ODM_MANIFEST_B_FILES := $(DEVICE_PATH)/sku/manifest_b.xml $(DEVICE_PATH)/vintf/manifest_parrot_ss.xml
-ODM_MANIFEST_D_FILES := $(DEVICE_PATH)/sku/manifest_d.xml
-ODM_MANIFEST_DN_FILES := $(DEVICE_PATH)/sku/manifest_dn.xml
-ODM_MANIFEST_DNE_FILES := $(DEVICE_PATH)/sku/manifest_dne.xml
-ODM_MANIFEST_N_FILES := $(DEVICE_PATH)/sku/manifest_n.xml
-ODM_MANIFEST_NE_FILES := $(DEVICE_PATH)/sku/manifest_ne.xml
+ODM_MANIFEST_B_FILES := $(DEVICE_PATH)/configs/vintf/sku/manifest_b.xml $(DEVICE_PATH)/configs/vintf/manifest_parrot_ss.xml
+ODM_MANIFEST_D_FILES := $(DEVICE_PATH)/configs/vintf/sku/manifest_d.xml
+ODM_MANIFEST_DN_FILES := $(DEVICE_PATH)/configs/vintf/sku/manifest_dn.xml
+ODM_MANIFEST_DNE_FILES := $(DEVICE_PATH)/configs/vintf/sku/manifest_dne.xml
+ODM_MANIFEST_N_FILES := $(DEVICE_PATH)/configs/vintf/sku/manifest_n.xml
+ODM_MANIFEST_NE_FILES := $(DEVICE_PATH)/configs/vintf/sku/manifest_ne.xml
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
