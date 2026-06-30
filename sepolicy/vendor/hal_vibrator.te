@@ -1,1 +1,0 @@
-allow hal_vibrator_default hal_audio_service:service_manager find;
