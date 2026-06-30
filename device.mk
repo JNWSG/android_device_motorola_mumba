@@ -196,13 +196,6 @@ PRODUCT_PACKAGES += \
 # HWUI
 TARGET_USES_VULKAN := true
 
-# Hotword Enrollement
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/permissions/product_privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/sysconfig/hotword-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/hotword-hiddenapi-package-whitelist.xml
-
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
