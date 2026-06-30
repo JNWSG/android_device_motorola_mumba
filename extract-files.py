@@ -173,10 +173,6 @@ module = ExtractUtilsModule(
     extract_fns=extract_fns,
 )
 
-module.add_proprietary_file('proprietary-files-fm.txt').add_copy_files_guard(
-    'TARGET_HAS_FM', 'true'
-)
-
 if __name__ == '__main__':
     utils = ExtractUtils.device(module)
     utils.run()
