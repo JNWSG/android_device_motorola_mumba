@@ -1696,6 +1696,9 @@ vendor/lib64/libtrustedapploader.so
 vendor/bin/cnss-daemon
 vendor/etc/init/init.vendor.wlan.rc
 vendor/etc/wifi/vendor_cmd.xml
+vendor/etc/wifi/adrastea/WCNSS_qcom_cfg.ini
+vendor/etc/wifi/p2p_supplicant_overlay.conf
+vendor/etc/wifi/wpa_supplicant_overlay.conf
 
 # Vibrator
 vendor/lib64/vendor.qti.hardware.vibratorCL.impl.so
