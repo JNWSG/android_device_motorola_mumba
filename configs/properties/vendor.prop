@@ -1,6 +1,7 @@
 # Audio
 audio.spatializer.pose_predictor_type=2
 audio.spatializer.prediction_duration_ms=50
+persist.vendor.audio.effectimplenter=dolby
 ro.vendor.audio.stereo_master_volume=1
 aaudio.hw_burst_min_usec=2000
 aaudio.mmap_exclusive_policy=1
@@ -16,6 +17,7 @@ persist.vendor.audio.ambisonic.auto.profile=false
 persist.vendor.audio.ambisonic.capture=false
 persist.vendor.audio.apptype.multirec.enabled=false
 persist.vendor.audio.avs.afe_api_version=2
+persist.vendor.audio.dolby.tws_tuning=true
 persist.vendor.audio.fluence.speaker=true
 persist.vendor.audio.fluence.tmic.enabled=false
 persist.vendor.audio.fluence.voicecall=true
@@ -47,10 +49,13 @@ ro.vendor.beluga.p=0x3
 ro.vendor.beluga.s=0x900
 ro.vendor.beluga.t=0x240
 ro.mediaserver.64b.enable=true
+persist.vendor.audio_fx.current=dolby
 vendor.audio.adm.buffering.ms=2
 vendor.audio.ainr_in_zoom=true
 vendor.audio.c2.preferred=true
 vendor.audio.deep_buffer.ringtone=true
+vendor.audio.dolby.ds2.enabled=false
+vendor.audio.dolby.ds2.hardbypass=false
 vendor.audio.enable.mirrorlink=false
 vendor.audio.feature.a2dp_offload.enable=true
 vendor.audio.feature.afe_proxy.enable=true
@@ -301,6 +306,9 @@ debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=0
 media.c2.hal.selection=aidl
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+
+# Media (Dolby)
+ro.vendor.dolby.dax.version=DAX3_3.12.0.8_r1
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
