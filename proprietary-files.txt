@@ -68,6 +68,10 @@ vendor/lib64/vendor.qti.hardware.ListenSoundModelAidl-V1-ndk.so
 
 # Audio configs
 vendor/etc/audio/sku_parrot/audio_effects_config_stub.xml
+vendor/etc/audio/sku_parrot/audio_policy_configuration.xml
+vendor/etc/audio/sku_parrot_qssi/audio_policy_configuration.xml
+vendor/etc/audio/sku_parrot/resourcemanager_parrot_qrd.xml
+vendor/etc/audio/sku_parrotlite/resourcemanager_parrot_qrd.xml
 vendor/etc/audio_effects.xml
 vendor/etc/audio_ext_spkr.conf
 vendor/etc/audio_policy_volumes.xml
