@@ -77,6 +77,8 @@ PRODUCT_PACKAGES += \
     libmediautils_vendor.vendor \
     libmemunreachable.vendor
 
+TARGET_EXCLUDES_AUDIOFX := true
+
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8450-6.6/audio/primary-hal
 CONFIG_HAL_SRC_DIR := $(AUDIO_HAL_DIR)/configs/parrot
 
