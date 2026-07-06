@@ -26,4 +26,8 @@
         <name>vendor.qti.memory.pasrmanager</name>
         <transport>hwbinder</transport>
     </hal>
+    <hal format="aidl">
+        <name>android.hardware.media.c2</name>
+        <fqname>IComponentStore/default</fqname>
+    </hal>
 </manifest>
