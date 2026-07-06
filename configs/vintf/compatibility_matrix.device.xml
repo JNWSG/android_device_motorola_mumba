@@ -61,4 +61,11 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl">
+        <name>vendor.qti.snapdragonServices</name>
+        <interface>
+            <name>ISnapdragonServices</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>
