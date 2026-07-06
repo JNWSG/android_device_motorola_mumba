@@ -1262,7 +1262,9 @@ vendor/lib64/vendor.qti.qccvndhal_aidl-halimpl.so
 
 # QESDK
 vendor/bin/qesdk-manager
+vendor/bin/snapdragon_services
 vendor/etc/init/qesdk-manager.rc
+vendor/etc/init/snapdragon_services.rc
 vendor/etc/seccomp_policy/qesdk.policy
 vendor/etc/seccomp_policy/qesdksec.policy
 vendor/etc/ssg/ta_config.json
