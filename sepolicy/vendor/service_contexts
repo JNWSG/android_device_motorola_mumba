@@ -8,4 +8,5 @@ vendor.qti.hardware.perf2.IPerf/default                u:object_r:vendor_hal_per
 vendor.qti.snapdragonServices.ISnapdragonServices/default           u:object_r:vendor_hal_snapx_service:s0
 android.hardware.biometrics.face.virtualhal.IVirtualHal/virtual      u:object_r:hal_face_service:s0
 android.hardware.biometrics.fingerprint.virtualhal.IVirtualHal/virtual u:object_r:hal_fingerprint_service:s0
-
+vendor.qti.hardware.fm.IFmHci/default          u:object_r:vendor_hal_fm_aidl_service:s0
+vendor.qti.hardware.perf2.IPerf/default                u:object_r:vendor_hal_perf2_service:s0

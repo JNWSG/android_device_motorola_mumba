@@ -68,4 +68,157 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.fm</name>
+        <version>1.0</version>
+        <interface>
+            <name>IFmHci</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.qti.hardware.fm</name>
+        <interface>
+            <name>IFmHci</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.perf</name>
+        <version>2.0-3</version>
+        <interface>
+            <name>IPerf</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.qti.hardware.perf2</name>
+        <interface>
+            <name>IPerf</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.qti.qesdsys</name>
+        <version>1-4</version>
+        <interface>
+            <name>IQesdSys</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.net.nlinterceptor</name>
+        <interface>
+            <name>IInterceptor</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.power.stats</name>
+        <version>2</version>
+        <interface>
+            <name>IPowerStats</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.light</name>
+        <version>2</version>
+        <interface>
+            <name>ILights</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.vibrator</name>
+        <version>1-2</version>
+        <interface>
+            <name>IVibratorManager</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.oemlock</name>
+        <interface>
+            <name>IOemLock</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" updatable-via-apex="true">
+        <name>android.hardware.authsecret</name>
+        <interface>
+            <name>IAuthSecret</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.wifi.supplicant</name>
+        <version>2-3</version>
+        <interface>
+            <name>ISupplicant</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.input.processor</name>
+        <interface>
+            <name>IInputProcessor</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.weaver</name>
+        <version>2</version>
+        <interface>
+            <name>IWeaver</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.secure_element</name>
+        <interface>
+            <name>ISecureElement</name>
+            <regex-instance>SIM[1-9][0-9]*</regex-instance>
+            <regex-instance>eSE[1-9][0-9]*</regex-instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.radio.ims</name>
+        <version>2</version>
+        <interface>
+            <name>IRadioIms</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+            <instance>slot3</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.bluetooth.ranging</name>
+        <interface>
+            <name>IBluetoothChannelSounding</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.bluetooth.socket</name>
+        <interface>
+            <name>IBluetoothSocket</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.media.c2</name>
+        <interface>
+            <name>IComponentStore</name>
+            <regex-instance>default[0-9]*</regex-instance>
+            <regex-instance>vendor[0-9]*_software</regex-instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.dumpstate</name>
+        <interface>
+            <name>IDumpstateDevice</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>
