@@ -6,6 +6,8 @@ android.frameworks.sensorservice.ISensorManager/default              u:object_r:
 vendor.qti.qhcp.IQHDC/default                          u:object_r:vendor_qms_service:s0
 
 # Audio
+vendor.qti.hardware.pal.IPAL/default u:object_r:hal_audio_service:s0
+vendor.qti.hardware.paleventnotifier.IPALEventNotifier/default u:object_r:hal_audio_service:s0
 android.hardware.audio.core.IConfig/default                          u:object_r:hal_audio_service:s0
 android.hardware.audio.core.IModule/default                          u:object_r:hal_audio_service:s0
 android.hardware.audio.effect.IFactory/default                       u:object_r:hal_audio_service:s0
