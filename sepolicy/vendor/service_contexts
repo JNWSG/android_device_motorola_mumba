@@ -1,12 +1,25 @@
-vendor.qti.qhcp.IQHDC/default                          u:object_r:vendor_qms_service:s0
+# Sensors
+motorola.hardware.sensors.ISensorExt/default    u:object_r:hal_sensorext_service:s0
 android.frameworks.sensorservice.ISensorManager/default              u:object_r:fwk_sensor_service:s0
+
+# Qhdc
+vendor.qti.qhcp.IQHDC/default                          u:object_r:vendor_qms_service:s0
+
+# Audio
 android.hardware.audio.core.IConfig/default                          u:object_r:hal_audio_service:s0
 android.hardware.audio.core.IModule/default                          u:object_r:hal_audio_service:s0
 android.hardware.audio.effect.IFactory/default                       u:object_r:hal_audio_service:s0
+
+# Wlan
 android.hardware.wifi.supplicant.ISupplicant/default                 u:object_r:hal_wifi_supplicant_service:s0
+
+# Perf
 vendor.qti.hardware.perf2.IPerf/default                u:object_r:vendor_hal_perf2_service:s0
 vendor.qti.snapdragonServices.ISnapdragonServices/default           u:object_r:vendor_hal_snapx_service:s0
+
+# Biometrics
 android.hardware.biometrics.face.virtualhal.IVirtualHal/virtual      u:object_r:hal_face_service:s0
 android.hardware.biometrics.fingerprint.virtualhal.IVirtualHal/virtual u:object_r:hal_fingerprint_service:s0
+
+# FM
 vendor.qti.hardware.fm.IFmHci/default          u:object_r:vendor_hal_fm_aidl_service:s0
-vendor.qti.hardware.perf2.IPerf/default                u:object_r:vendor_hal_perf2_service:s0
